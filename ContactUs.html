@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Album Contact Us</title>
+     </head>
+    <body>
+        <form action="#" method="POST">
+            <table>
+                 <tr>                   
+                    <div>
+                        <p>
+                         <td align="right"><label id="FirstName" for="FirstName">First Name: </label></td>
+                         <td align="left"><input id="FirstName" name="FirstName" type="text" style="width:198px" /></td>
+                        </p>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <p>
+                            <td align="right"><label id="LastName" for="LastName">Last Name: </label></td>
+                            <td align="left"><input id="LastName" name="LastName" type="text" style="width:198px" /></td>
+                        </p>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <p>
+                            <td align="right"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
+                            <td align="left"><input id="EmailAddress" name="EmailAddress" type="text" style="width:198px" /></td>
+                        </p>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <p>
+                            <td align="right"><label id="LicenseType" for="LicenseType">Type of License: </label></td>
+                            <td align="left"><input id="LicenseType" type="radio" name="LicenseType" value="Business" checked/>Business
+                            <input id="LicenseType" type="radio" name="LicenseType" value="Personal" />Personal</td>
+                        </p>
+                    </div>
+                </tr>
+                <t>
+                    <div>
+                            <td align="right"><label id="Reason">Reason: </label>
+                            <td align="left"><select id="Reason" name="Reason" style="width:202px">
+                                <option disabled selected value></option>
+                                <option value="SelectReason">Select a Reason</option>
+                                <option value="SoftwareSupport">Software Support</option>
+                                <option value="HardwareSupport">Hardware Support</option>
+                                <option value="InformationRequest">Information Request</option>
+                            </select></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <p>
+                            <td align="right"><label id="AdditionalInformation">Additional Information: </label></td>
+                            <td align="left"><textarea id = "AdditionalInformation" name="AdditionalInformation"  style="width:196px" rows=5 cols=20></textarea></td>
+                        </p>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <p>
+                            <td></td>
+                            <td align="right"><input type="checkbox" name="Terms" value="Terms"/>I have read the terms of service.</td>
+                        </p>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <p>
+                            <td></td>
+                            <td align="center"><input type="submit" value="Send Request" /></td>
+                        </p>
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </body>
