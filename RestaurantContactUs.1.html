@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weekend Cafe Contact Us</title>
+    </head>
+    <body>
+        <div>
+            <header style="text-align:center">
+                <h2 style="font:bold">Weekend Cafe</h2><hr/>
+            </header>
+        </div>
+        <div>
+            <nav>
+                <a style=padding-right:30px; href="RestaurantHome.html">Home</a>  
+                <a style=padding-right:30px; href="RestaurantMenu.html"> Menu</a>
+                <a href="RestaurantContactUs.html"> Contact Us</a><hr/>
+            </nav>
+        </div>
+        <div>
+            <form action="#" method="POST">
+                <table>
+                    <tr>                   
+                        <div>
+                            <p>
+                                <td align="right"><label id="FullName" for="FullName">Name: </label></td>
+                                <td align="left"><input id="FullName" name="FullName" type="text" style="width:198px" /></td>
+                            </p>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <p>
+                                <td align="right"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
+                                <td align="left"><input id="EmailAddress" name="EmailAddress" type="text" style="width:198px" /></td>
+                            </p>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <p>
+                                <td align="right"><label id="PhoneNumber" for="PhoneNumber">Phone: </label></td>
+                                <td align="left"><input id="PhoneNumber" name="PhoneNumber" type="text" style="width:198px" /></td>
+                            </p>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td align="right"><label id="InquiryReason">Reason: </label></td>
+                            <td align="left"><select id="InquiryReason" name="InquiryReason" style="width:202px">
+                                <option selected value="Catering">Catering</option>
+                                <option value="Private Party">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <p>
+                                <td align="right"><label id="AdditionalInformation">Additional Information: </label></td>
+                                <td align="left"><textarea id = "AdditionalInformation" name="AdditionalInformation"  style="width:196px" rows=5 cols=20></textarea></td>
+                            </p>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <p>
+                                <td align="right"><label id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label></td>
+                                <td align="left"><input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
+                                <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes</td>
+                            </p>
+                        </div>
+                    </tr>
+                </table>
+              <div>
+                    <p>
+                        <label id="BestDays" for="BestDays">Best days to contact you:
+                        <input type="checkbox" name="BestDays" value="BestDays"/>M
+                        <input type="checkbox" name="BestDays" value="BestDays"/>T
+                        <input type="checkbox" name="BestDays" value="BestDays"/>W
+                        <input type="checkbox" name="BestDays" value="BestDays"/>Th
+                        <input type="checkbox" name="BestDays" value="BestDays"/>F                               
+                    </p>
+                </div>
+                <div>
+                    <p style="text-align:center">
+                        <input type="submit" value="Send Request" /></td>
+                    </p>
+                </div>
+            </form><hr/>           
+        </div>
+        <div>
+            <footer>
+                <h3 style="text-align:center">268 Summer St, MeadowBrook, ME, 03890</h3>
+                <h3 style="text-align:center">(207)787-3434</h3>
+            </footer>
+        </div>        
+    </body>
+</html>
