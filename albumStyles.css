@@ -1,0 +1,21 @@
+/* styles for Album.html */
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+th {
+    font-style: bold;
+    color: lightblue;
+}
+div, h1, h2, h3 {
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+img {
+    width: 300px;
+}
+body {
+    color: cornflowerblue;
+}

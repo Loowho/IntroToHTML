@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html>
+    <!-- added internal style sheet to change any li to italic -->
     <head>
         <title>LAB - Album Page</title>
         <style>
-            table, th, td {
-             border: 1px solid black;
-             text-align: center;
+        li{
+                font-style: italic;
             }
         </style>
+        <!-- added call to external style sheet -->
+        <link href="albumStyles.css"
+              rel="stylesheet"
+              type="text/css"/>
     </head>
     <body>
         <div>
-            <p style="text-align:center">
-                <img src="images/Jellyfish.jpg" style="width: 300px;" /><br/>
-                <h1 style="text-align:center">The Land of Imagination</h1>
-            </p>
-            <p style="text-align:center">
-                <a href="http://www.thesoftwareguild.com" />Dreamers</a>
-                <h3 style="text-align:center">12/31/2020</h3><hr/>
-            </p>
-            <h2 style=text-align:center>Band Members and Producers</h2>
-            <p> 
-                <ul>
-                    <li>Ginny Hightone - Lead Vocals</li>
-                    <li>Bobby Fingers - Guitar</li>
-                    <li>Howie Twotone - Acoustic Guitar, Backup Vocals</li>
-                    <li>Misty Bones - Drums</li>
-                    <li>Melody Writer - Bass, Backup Vocals</li>
-                    <li>Producer - Vinny Demico</li>
-                </ul>
+<!-- Added inline style for h1 -->
+            <p>
+                <img src="images/Jellyfish.jpg" /><br/>
+                <h1 style="color:purple;">The Land of Imagination</h1>
             </p>
             <p>
-                    <table border="1" width="100%">
-                    <caption>Tracks</caption>
-                    <tr bgcolor="grey">
-                        <th>Track #</th>
-                        <th>Track Title</th>
-                        <th>Track Length</th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Meadows</td>
-                            <td>3:24</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Oceans</td>
-                            <td>2:56</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Mountains and Sky</td>
-                            <td>4:03</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <a href="http://www.thesoftwareguild.com" />Dreamers</a>
+                <h3>12/31/2020</h3><hr/>
+            </p>
+            <p>
+                <h2>Band Members and Producers</h2>
+            </p>
         </div>
+        <p> 
+            <ul>
+                <li>Ginny Hightone - Lead Vocals</li>
+                <li>Bobby Fingers - Guitar</li>
+                <li>Howie Twotone - Acoustic Guitar, Backup Vocals</li>
+                <li>Misty Bones - Drums</li>
+                <li>Melody Writer - Bass, Backup Vocals</li>
+                <li>Producer - Vinny Demico</li>
+            </ul>
+        </p>
+        <p>
+            <table border="1" width="100%">
+                <caption>Tracks</caption>
+                <tr bgcolor="grey">
+                    <th>Track #</th>
+                    <th>Track Title</th>
+                    <th>Track Length</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Meadows</td>
+                        <td>3:24</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Oceans</td>
+                        <td>2:56</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mountains and Sky</td>
+                        <td>4:03</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
     </body>
 </html>
