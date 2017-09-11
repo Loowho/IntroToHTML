@@ -3,16 +3,42 @@
     <head>
         <title>Weekend Cafe Contact Us</title>
     </head>
+    <style>
+        a {
+            padding-right:30px;
+        }
+        #alignR {
+            text-align: right;
+        }
+        #alignL {
+            text-align: left;
+            width:198px;
+        }
+        #AdditionalInformation{
+            width:167px;
+            height:50px;
+        }
+        #InquiryReason{
+            width:173px;
+        }
+        #submit{
+            text-align:center;
+        }
+    </style>
+    </style>
+    <link href="restaurantStyles.css"
+    rel="stylesheet"
+    type="text/css"/>
     <body>
         <div>
-            <header style="text-align:center">
-                <h1>Weekend Cafe</h1><hr/>
+            <header>
+                Weekend Cafe<hr/>
             </header>
         </div>
         <div>
             <nav>
-                <a style=padding-right:30px; href="RestaurantHome.html">Home</a>  
-                <a style=padding-right:30px; href="RestaurantMenu.html"> Menu</a>
+                <a href="RestaurantHome.html">Home</a>  
+                <a href="RestaurantMenu.html"> Menu</a>
                 <a href="RestaurantContactUs.html"> Contact Us</a><hr/>
             </nav>
         </div>
@@ -22,31 +48,31 @@
                     <tr>                   
                         <div>
                             <p>
-                                <td align="right"><label id="FullName" for="FullName">Name: </label></td>
-                                <td align="left"><input id="FullName" name="FullName" type="text" style="width:198px" /></td>
+                                <td id="alignR"><label id="FullName" for="FullName">Name: </label></td>
+                                <td id="alignL"><input id="FullName" name="FullName" type="text" /></td>
                             </p>
                         </div>
                     </tr>
                     <tr>
                         <div>
                             <p>
-                                <td align="right"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
-                                <td align="left"><input id="EmailAddress" name="EmailAddress" type="text" style="width:198px" /></td>
+                                <td id="alignR"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
+                                <td id="alignL"><input id="EmailAddress" name="EmailAddress" type="text" /></td>
                             </p>
                         </div>
                     </tr>
-                    <tr>
+                  <tr>
                         <div>
                             <p>
-                                <td align="right"><label id="PhoneNumber" for="PhoneNumber">Phone: </label></td>
-                                <td align="left"><input id="PhoneNumber" name="PhoneNumber" type="text" style="width:198px" /></td>
+                                <td id="alignR"><label id="PhoneNumber" for="PhoneNumber">Phone: </label></td>
+                                <td id="alignL"><input id="PhoneNumber" name="PhoneNumber" type="text" /></td>
                             </p>
                         </div>
                     </tr>
-                    <tr>
+                   <tr>
                         <div>
-                            <td align="right"><label id="InquiryReason">Reason For Inquiry: </label></td>
-                            <td align="left"><select id="InquiryReason" name="InquiryReason" style="width:202px">
+                            <td id="alignR"><label id="InquiryReason">Reason For Inquiry: </label></td>
+                            <td id="alignL"><select id="InquiryReason" name="InquiryReason" >
                                 <option selected value="Catering">Catering</option>
                                 <option value="Private Party">Private Party</option>
                                 <option value="Feedback">Feedback</option>
@@ -57,16 +83,16 @@
                     <tr>
                         <div>
                             <p>
-                                <td align="right"><label id="AdditionalInformation">Additional Information: </label></td>
-                                <td align="left"><textarea id = "AdditionalInformation" name="AdditionalInformation"  style="width:196px" rows=5 cols=20></textarea></td>
+                                <td id="alignR"><label id="AdditionalInformation">Additional Information: </label></td>
+                                <td id="alignL"><textarea id = "AdditionalInformation" name="AdditionalInformation" ></textarea></td>
                             </p>
                         </div>
                     </tr>
                     <tr>
                         <div>
                             <p>
-                                <td align="right"><label id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label></td>
-                                <td align="left"><input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
+                                <td id="alignR"><label id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label></td>
+                                <td id="alignL"><input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
                                 <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes</td>
                             </p>
                         </div>
@@ -74,28 +100,28 @@
                     <tr>
                         <div>
                             <p>
-                                <td align="right"><label id="BestDays" for="BestDays">Best days to contact you: </label></td>
-                                <td align="left"><input type="checkbox" name="BestDays" value="BestDays"/>M
+                                <td id="alignR"><label id="BestDays" for="BestDays">Best days to contact you: </label></td>
+                                <td id="alignL"><input type="checkbox" name="BestDays" value="BestDays"/>M
                                 <input type="checkbox" name="BestDays" value="BestDays"/>T
                                 <input type="checkbox" name="BestDays" value="BestDays"/>W
                                 <input type="checkbox" name="BestDays" value="BestDays"/>Th
                                 <input type="checkbox" name="BestDays" value="BestDays"/>F </td>                              
                             </p>
                         </div>
-                    </tr>
+                    </tr> -->
                 </table>
                 <div>
-                    <p style="text-align:center">
+                    <p id="submit">
                         <input type="submit" value="Send Request" /></td>
                     </p>
                 </div>
             </form><hr/>           
         </div>
         <div>
-            <footer style="font-size:10pt; text-align:center;" >
-                <p>   268 Summer St, MeadowBrook, ME, 03890</p>
-                <p>   (207)787-3434</p>
-                </footer>
-            </div>        
+            <footer>
+                268 Summer St, MeadowBrook, ME, 03890<br/>
+                (207)787-3434
+            </footer>
+        </div>        
     </body>
 </html>
