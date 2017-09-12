@@ -10,8 +10,19 @@ header{
 footer{
     font-size: 12pt;
 }
-/*body {
-    margin:auto;
-    height: 600px;
-    width: 600px; -->
+a:link {
+    text-decoration: underline;
+    padding-right: 30px;
+    color: green;
 }
+a:visited {
+    background-color: rebeccapurple;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
+    color: red;
+}
+
