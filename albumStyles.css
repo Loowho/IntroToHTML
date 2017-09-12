@@ -17,5 +17,8 @@ h2{
     width: 300px;
 }*/
 body {
+    margin:auto;
+    height: 600px;
+    width: 600px;
     color: cornflowerblue;
 }
