@@ -3,6 +3,15 @@ header, footer{
     font-style: italic;
     color: darkcyan;
 }
+header{
+    font-family:fantasy;
+    font-size: 18pt;
+}
 footer{
-    font-size: 10pt;
+    font-size: 12pt;
+}
+/*body {
+    margin:auto;
+    height: 600px;
+    width: 600px; -->
 }
