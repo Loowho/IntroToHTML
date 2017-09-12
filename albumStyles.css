@@ -3,8 +3,11 @@ table, th, td {
     border: 1px solid black;
     text-align: center;
 }
+td {
+    background-color: lavender;
+}
 th {
-    font-style: bold;
+    font-style: italic;
     color: lightblue;
 }
 div, h1, h2, h3 {
