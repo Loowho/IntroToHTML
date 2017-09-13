@@ -1,5 +1,5 @@
 /* styles for Album.html */
-table, th, td {
+/*table, th, td {
     border: 1px solid black;
     text-align: center;
 }
@@ -9,6 +9,34 @@ td {
 th {
     font-style: italic;
     color: lightblue;
+}*/
+a, a:visited, a:active, a:link{
+    font-family: monospace;
+    text-decoration: none;
+    font-weight: none;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: greenyellow;
+}
+li{
+    font-style: italic;
+}
+h1, h2 {
+font-family:cursive;
+}
+#imageBackground {
+    height: 300px; 
+    background: url("images/Jellyfish.jpg") no-repeat center;
+}
+img {
+    height: 300px;
+}
+body {
+    margin:auto;
+    height: 600px;
+    width: 600px;
+    color: cornflowerblue;
 }
 div, h1, h2, h3 {
     text-align: center;
@@ -19,9 +47,3 @@ h2{
 /*img {
     width: 300px;
 }*/
-body {
-    margin:auto;
-    height: 600px;
-    width: 600px;
-    color: cornflowerblue;
-}
