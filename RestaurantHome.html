@@ -3,49 +3,76 @@
     <head>
         <title>Weekend Cafe Home</title>
     </head>
-    <style>
+    <link href="./css/bootstrap.min.css"
+          rel="stylesheet"/> 
+    <link href="./restaurantStyles.css"
+          rel="stylesheet"/>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="./js/bootstrap.min.js">
+    </script>
+<!--    <style>
     #restaurant {
     background-color: lemonchiffon;        
     }
     #restaurantDesc {
     width: 400px; height: 150px; margin:auto; font-size: 14pt
     }
-    </style>
-    <link href="restaurantStyles.css"
-          rel="stylesheet"
-          type="text/css"/>
-    <body id="home">
-        <div>
-            <header>
-                Weekend Cafe<hr/>
-            </header>
-        </div>
-        <div>
-            <nav>
-                <a href="RestaurantHome.html">Home</a>  
-                <a href="RestaurantMenu.html"> Menu</a>
-                <a href="RestaurantContactUs.html"> Contact Us</a><hr/>
-            </nav>
-        </div>
-        <div id=restaurant>
-            <p style="text-align: center">
-                <img src="images\restaurant.jpg" style="width: 400px; height: 150px;">
-            </p>
-            <div id=restaurantDesc>
+    </style> -->
+    <body id="home" class="commonBackground">
+        <div class="container-fluid">
+            <div id="jumbotron" class="jumbotron">
+                <h1>COMING SOON!</h1>
                 <p>
-                    Restaurant Description<br/>
-                    The Weekend Cafe has a tranquil atmosphere and delicious homestyle cooking. 
-                    Whether you are looking for a spectacular cup of coffee with a muffin, 
-                    a yummy burger, fries and a frappe or a 3 course 
-                    meal, the Weekend Cafe is the place for you.
-                </p>
+                    Weekend Cafe is excited to announce a new location will be opening soon. 
+                    Stay tuned for more details!
+                </p><hr/>
+            </div>                
+            <div>
+                    <header>
+                        Weekend Cafe<hr/>
+                    </header>
             </div>
-        </div>
-        <div><hr/>
-            <footer>
-                268 Summer St, MeadowBrook, ME, 03890<br/>
-                (207)787-3434
-            </footer>
-        </div>
+            <div>
+                <ul id="navigation" class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="RestaurantHome.html">
+                        <span class="glyphicon glyphicon-home"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nave-link" href="RestaurantMenu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="RestaurantContactUs.html"> Contact Us</a>
+                    </li>
+                </ul>
+            </div><hr/>
+            <div class="row">
+                <div id="restaurant" class="col-sm-6 col-sm-offset-3">
+                    <img id="restaurantImg" src="images\restaurant.jpg" style="width: 400px; height: 150px;";>
+                </div>
+            </div><br/>
+            <div class="row">
+                <div id="restaurantDesc" class="col-sm-4 col-sm-offset-3">
+                    <p style="font-weight: bold;">Restaurant Description:</p><br/>
+                    <p style="width: 400px; height: 300px; margin:auto; font-size: 12pt";>
+                         The Weekend Cafe has a tranquil atmosphere and delicious homestyle cooking. 
+                        Whether you are looking for a spectacular cup of coffee with a muffin, 
+                        a yummy burger, fries and a frappe or a 3 course 
+                        meal, the Weekend Cafe is the place for you.
+                    </p>
+                </div>
+            </div><hr/>
+            <div>
+                <footer>
+                    268 Summer St, MeadowBrook, ME, 03890<br/>
+                    (207)787-3434
+                </footer>
+            </div>
+        </div>        
     </body>
 </html>

@@ -3,9 +3,23 @@
     <head>
         <title>Weekend Cafe Contact Us</title>
     </head>
-    <style>
-        body {
+    <link href="./css/bootstrap.min.css"
+        rel="stylesheet"/> 
+    <link href="./restaurantStyles.css"
+        rel="stylesheet"/>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="./js/bootstrap.min.js">
+    </script>
+<!--    <style>
+        #contact {
             background-color: lemonchiffon;
+            margin:auto;
+            height: 600px;
+            width: 600px; 
         }
         #alignR {
             text-align: right;
@@ -14,114 +28,112 @@
             text-align: left;
             width:198px;
         }
-        #AdditionalInformation{
+        #AdditionalInformation {
             width:167px;
             height:50px;
         }
-        #InquiryReason{
+        #InquiryReason {
             width:173px;
         }
         #submit{
             text-align:center;
         }
-        body {
-            margin:auto;
-            height: 600px;
-            width: 600px; 
-        }
         #FullName, #EmailAddress, #BestDays {
             font-weight: bold;
         }
-    </style>
-    <link href="restaurantStyles.css"
-    rel="stylesheet"
-    type="text/css"/>
-    <body id="contact">
-        <div>
+    </style> -->
+    <body id="contact" class=commonBackground>
+        <div class="container-fluid">
+            <div>
             <header>
                 Weekend Cafe<hr/>
             </header>
-        </div>
-        <div>
-            <nav>
-                <a href="RestaurantHome.html">Home</a>  
-                <a href="RestaurantMenu.html"> Menu</a>
-                <a href="RestaurantContactUs.html"> Contact Us</a><hr/> 
-            </nav>
-        </div>
-        <div>
-            <form action="#" method="POST">
-                <table>
-                    <tr>                   
-                        <div>
-                            <p>
-                                <td id="alignR"><label id="FullName" for="FullName">Name: </label></td>
-                                <td id="alignL"><input id="FullName" name="FullName" type="text" /></td>
-                            </p>
-                        </div>
-                    </tr>
-                    <tr>
-                        <div>
-                            <p>
-                                <td id="alignR"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
-                                <td id="alignL"><input id="EmailAddress" name="EmailAddress" type="text" /></td>
-                            </p>
-                        </div>
-                    </tr>
-                  <tr>
-                        <div>
-                            <p>
-                                <td id="alignR"><label id="PhoneNumber" for="PhoneNumber">Phone: </label></td>
-                                <td id="alignL"><input id="PhoneNumber" name="PhoneNumber" type="text" /></td>
-                            </p>
-                        </div>
-                    </tr>
-                   <tr>
-                        <div>
-                            <td id="alignR"><label id="InquiryReason">Reason For Inquiry: </label></td>
-                            <td id="alignL"><select id="InquiryReason" name="InquiryReason" >
-                                <option selected value="Catering">Catering</option>
-                                <option value="Private Party">Private Party</option>
-                                <option value="Feedback">Feedback</option>
-                                <option value="Other">Other</option>
-                            </select></td>
-                        </div>
-                    </tr>
-                    <tr>
-                        <div>
-                            <p>
-                                <td id="alignR"><label id="AdditionalInformation">Additional Information: </label></td>
-                                <td id="alignL"><textarea id = "AdditionalInformation" name="AdditionalInformation" ></textarea></td>
-                            </p>
-                        </div>
-                    </tr>
-                    <tr>
-                        <div>
-                            <p>
-                                <td id="alignR"><label id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label></td>
-                                <td id="alignL"><input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
-                                <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes</td>
-                            </p>
-                        </div>
-                    </tr>
-                    <tr>
-                        <div>
-                            <p>
-                                <td id="alignR"><label id="BestDays" for="BestDays">Best days to contact you: </label></td>
-                                <td id="alignL"><input type="checkbox" name="BestDays" value="BestDays"/>M
-                                <input type="checkbox" name="BestDays" value="BestDays"/>T
-                                <input type="checkbox" name="BestDays" value="BestDays"/>W
-                                <input type="checkbox" name="BestDays" value="BestDays"/>Th
-                                <input type="checkbox" name="BestDays" value="BestDays"/>F </td>                              
-                            </p>
-                        </div>
-                    </tr>
-                </table>
-                <div>
-                    <p id="submit">
-                        <input type="submit" value="Send Request" /></td>
-                    </p>
-                </div>
+            </div>
+            <div>
+                <ul id=navigation class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="RestaurantHome.html">
+                        <span class="glyphicon glyphicon-home"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nave-link active" href="RestaurantMenu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="RestaurantContactUs.html"> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div><hr/>
+                <form action="#" method="POST">
+                    <table class="table">
+                        <tr class="no-border">                   
+                                <td class="col-md-4 col-sm-offset-2" id="alignR"><label id="FullName" for="FullName">Name: </label></td>
+                                <td class="col-md-4 col-sm-offset-2" id="alignL"><input id="FullName" name="FullName" type="text" /></td>
+                        </tr>
+                        <tr class="no-border">
+                            <div>
+                                <p>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignR"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignL"><input id="EmailAddress" name="EmailAddress" type="text" /></td>
+                                </p>
+                            </div>
+                        </tr>
+                        <tr class="no-border">
+                            <div>
+                                <p>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignR"><label id="PhoneNumber" for="PhoneNumber">Phone: </label></td>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignL"><input id="PhoneNumber" name="PhoneNumber" type="text" /></td>
+                                </p>
+                            </div>
+                        </tr>
+                        <tr class="no-border">
+                            <div>
+                                <td class="col-md-4 col-sm-offset-2" id="alignR"><label id="InquiryReason">Reason For Inquiry: </label></td>
+                                <td class="col-md-4 col-sm-offset-2" id="alignL"><select id="InquiryReason" name="InquiryReason" >
+                                    <option selected value="Catering">Catering</option>
+                                    <option value="Private Party">Private Party</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Other">Other</option>
+                                </select></td>
+                            </div>
+                        </tr>
+                        <tr class="no-border">
+                            <div>
+                                <p>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignR"><label id="AdditionalInformation">Additional Information: </label></td>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignL"><textarea id = "AdditionalInformation" name="AdditionalInformation" ></textarea></td>
+                                </p>
+                            </div>
+                        </tr>
+                        <tr class="no-border">
+                            <div>
+                                <p>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignR"><label id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label></td>
+                                    <td class="col-md-4 col-sm-offset-2" id="alignL"><input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
+                                    <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes</td>
+                                </p>
+                            </div>
+                        </tr>
+                        <tr class="no-border">
+                            <div>
+                                <p>
+                                    <td  class="col-md-4 col-sm-offset-2" id="alignR"><label id="BestDays" for="BestDays">Best days to contact you: </label></td>
+                                    <td  class="col-md-4 col-sm-offset-2" id="alignL"><input type="checkbox" name="BestDays" value="BestDays"/>M
+                                    <input type="checkbox" name="BestDays" value="BestDays"/>T
+                                    <input type="checkbox" name="BestDays" value="BestDays"/>W
+                                    <input type="checkbox" name="BestDays" value="BestDays"/>Th
+                                    <input type="checkbox" name="BestDays" value="BestDays"/>F </td>                              
+                                </p>
+                            </div>
+                        </tr>
+                    </table>
+                    <div>
+                        <p id="submit">
+                            <input type="submit" value="Send Request" /></td>
+                        </p>
+                    </div>
+                </div>                
             </form><hr/>           
         </div>
         <div>

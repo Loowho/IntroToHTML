@@ -2,168 +2,196 @@
 <html>
     <head>
         <title>Weekend Cafe Menu</title>
-        <style>
-            table {
+        <link href="./css/bootstrap.min.css"
+            rel="stylesheet"/> 
+        <link href="./restaurantStyles.css"
+            rel="stylesheet"/>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script
+            src="./js/bootstrap.min.js">
+        </script>
+<!--        <style>
+            #menuTable {
                 text-align: left;
-            }
-            table {
                 width:100%;
                 margin-bottom:100px;
             }
-            th {
+            #menuHeader {
                 font-size: 14pt;
                 color:darkgreen;
                 text-decoration: underline;
                 padding-right: 10px;
                 padding-top: 10px;
             }
-            td {
+            #menuBody {
                 padding-right: 10px;
             }
-            body {
+            #menu {
                 background-color: lemonchiffon;
             }
             #beverageType {
                 text-align:left;
                 padding-left: 100px;
-                padding-bottom: 10px;
-                
+                padding-bottom: 10px;                
             }
-        </style>
+        </style> -->
     </head>
-    <link href="restaurantStyles.css"
-    rel="stylesheet"
-    type="text/css"/>
-    <body id="menu">
-        <div>
-            <header>
-                Weekend Cafe<hr/>
-            </header>
+    <body id="menu" class=commonBackground>
+        <div class="container-fluid">
+            <div>
+                <header>
+                    Weekend Cafe<hr/>
+                </header>
+            </div>
+            <div>
+                <ul id=navigation class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="RestaurantHome.html">
+                        <span class="glyphicon glyphicon-home"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nave-link active" href="RestaurantMenu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="RestaurantContactUs.html"> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div><hr/>
+                <p>
+                    <table id=menutTable class="table">
+                        <tr id=menuHeader>
+                            <th class="column-label col-sm-4">Burger and Fries</th>
+                            <th class="column-label col-sm-4">Hot Dog and Chips</th>
+                            <th class="column-label col-sm-4">Italian Sausage and Peppers</th>
+                        </tr>
+                        <tbody>
+                            <tr id=menuBody class="no-border">
+                                <td class="col-md-4">
+                                    An American Classic!<br/>
+                                    Your choice - with or without cheese<br/>
+                                    Pickle, onion, tomato, and lettuce<br/>
+                                    Served with our famous thick cut<br/>
+                                    french fries<br/>
+                                    <br/>
+                                    $7.95
+                                </td>
+                                <td class="col-md-4">
+                                    A Summer Classic!<br/>
+                                    Your choice - white or wheat bun<br/>
+                                    Relish, mustard, and ketchup<br/>
+                                    Served with our house-made chips<br/>
+                                    <br/>
+                                    $7.95
+                                </td>
+                                <td class="col-md-4">
+                                    An All-Time Favorite!!<br/>
+                                    Your choice - mild or spicy<br/>
+                                    Cole Slaw<br/>
+                                    Served with garlic mashers<br/>
+                                    <br/>
+                                    $10.95
+                                </td>
+                            </tr>
+                        </tbody>
+                       <tr id=menuHeader>
+                            <th class="column-label col-sm-4">Tenderloin Sandwich and Chips</th>
+                            <th class="column-label col-sm-4">House Salad</th>
+                            <th class="column-label col-sm-4">Brisket Sandwich and Fries</th>
+                        </tr>
+                        <tbody>
+                            <tr id=menuBody class="no-border">
+                                <td class="col-md-4">
+                                    Really Hits the Spot!<br/>
+                                    Plain or Sesame Seed Bun<br/>
+                                    Pickle, onion, tomato, and lettuce<br/>
+                                    Served with our house-made chips<br/>
+                                    <br/>
+                                    $8.95
+                                </td>
+                                <td class="col-md-4">
+                                    On the lighter side<br/>
+                                    Your choice - with or without cheese<br/>
+                                    Iceburg lettuce, tomatoes, peppers<br/>
+                                    Served with a dinner roll<br/>
+                                    <br/>
+                                    $6.95
+                                </td>
+                                <td class="col-md-4">
+                                    A Taste of Texas!<br/>
+                                    Smoked Brisket on thick-cut Texas<br/>
+                                    Toast<br/>
+                                    Served with our famous thick-cut<br/>
+                                    french fries<br/>
+                                    <br/>
+                                    $7.95
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tr id=menuHeader>
+                            <th class="column-label col-sm-4">Beverages</th>
+                            <th class="column-label col-sm-4"> </th>
+                            <th class="column-label col-sm-4"> </th>
+                        </tr>
+                        <tbody>
+                            <tr id=menuBody class="no-border">
+                                <td class="col-md-4">
+                                    Root Beer
+                                </td>
+                                <td id=beveragePrice class="col-md-4">
+                                    $3.00
+                                </td>
+                                <td class="col-md-4">
+                                    
+                                </td>
+                            </tr>
+                            <tr id=menuBody class="no-border">
+                                <td class="col-md-4">
+                                    Bottled Water
+                                </td>
+                                <td id=beveragePrice class="col-md-4">
+                                    $1.25
+                                </td>
+                                <td class="col-md-4">
+                                    
+                                </td>
+                            </tr>
+                            <tr id=menuBody class="no-border">
+                                <td class="col-md-4">
+                                    Lemonade
+                                </td>
+                                <td id=beveragePrice class="col-md-4">
+                                    $1.00
+                                </td>
+                                <td class="col-md-4">
+                                    
+                                </td>
+                            </tr>
+                            <tr id=menuBody class="no-border">
+                                <td class="col-md-4">
+                                    Iced Tea
+                                </td>
+                                <td id=beveragePrice class="col-md-4">
+                                    $1.25
+                                </td>
+                                <td class="col-md-4">
+                                    
+                                </td>
+                            </tr>
+                        </tdody>
+                    </table><hr/>
+                </p>
+            </div>
+            <div>
+                    <footer>
+                        268 Summer St, MeadowBrook, ME, 03890<br/>
+                        (207)787-3434
+                    </footer>
+            </div>        
         </div>
-        <div>
-            <nav>
-                <a href="RestaurantHome.html">Home</a>  
-                <a href="RestaurantMenu.html"> Menu</a>
-                <a href="RestaurantContactUs.html"> Contact Us</a><hr/>
-            </nav>
-        </div>
-        <div>
-            <p>
-                <table>
-                    <tr>
-                        <th>Burger and Fries</th>
-                        <th>Hot Dog and Chips</th>
-                        <th>Italian Sausage and Peppers</th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>
-                                An American Classic!<br/>
-                                Your choice - with or without cheese<br/>
-                                Pickle, onion, tomato, and lettuce<br/>
-                                Served with our famous thick cut<br/>
-                                french fries<br/>
-                                <br/>
-                                $7.95
-                            </td>
-                            <td>
-                                A Summer Classic!<br/>
-                                Your choice - white or wheat bun<br/>
-                                Relish, mustard, and ketchup<br/>
-                                Served with our house-made chips<br/>
-                                <br/>
-                                $7.95
-                            </td>
-                            <td>
-                                An All-Time Favorite!!<br/>
-                                Your choice - mild or spicy<br/>
-                                Cole Slaw<br/>
-                                Served with garlic mashers<br/>
-                                <br/>
-                                $10.95
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tr>
-                        <th>Tenderloin Sandwich and Chips</th>
-                        <th>House Salad</th>
-                        <th>Brisket Sandwich and Fries</th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Really Hits the Spot!<br/>
-                                Plain or Sesame Seed Bun<br/>
-                                Pickle, onion, tomato, and lettuce<br/>
-                                Served with our house-made chips<br/>
-                                <br/>
-                                $8.95
-                            </td>
-                            <td>
-                                On the lighter side<br/>
-                                Your choice - with or without cheese<br/>
-                                Iceburg lettuce, tomatoes, peppers<br/>
-                                Served with a dinner roll<br/>
-                                <br/>
-                                $6.95
-                            </td>
-                            <td>
-                                A Taste of Texas!<br/>
-                                Smoked Brisket on thick-cut Texas<br/>
-                                Toast<br/>
-                                Served with our famous thick-cut<br/>
-                                french fries<br/>
-                                <br/>
-                                $7.95
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tr>
-                        <th>Beverages</th>
-                        <th> </th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Root Beer
-                            </td>
-                            <td id=beveragePrice>
-                                $3.00
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Bottled Water
-                            </td>
-                            <td id=beveragePrice>
-                                $1.25
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Lemonade
-                            </td>
-                            <td id=beveragePrice>
-                                $1.00
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Iced Tea
-                            </td>
-                            <td id=beveragePrice>
-                                $1.25
-                            </td>
-                        </tr>
-                    </tdody>
-                </table><hr/>
-            </p>
-        </div>
-        <div>
-            <footer>
-                268 Summer St, MeadowBrook, ME, 03890<br/>
-                (207)787-3434
-            </footer>
-        </div>        
     </body>
 </html>

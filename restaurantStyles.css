@@ -1,3 +1,4 @@
+/* @import("./css/bootstrap.min.css"); */
 header, footer{
     text-align: center;
     font-style: italic;
@@ -25,4 +26,68 @@ a:active {
     text-decoration: none;
     color: red;
 }
-
+/*#restaurant {
+    background-color: lemonchiffon;        
+}
+#restaurantDesc {
+width: 400px; height: 150px; margin:auto; font-size: 12pt
+} */
+#menuTable {
+    text-align: left;
+    width:100%;
+    margin-bottom:100px;
+}
+#menuHeader {
+    font-size: 14pt;
+    color:darkgreen;
+    text-decoration: underline;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+#menuBody {
+    padding-right: 10px;
+}
+/*(#menu {
+    background-color: lemonchiffon;
+} */
+#beverageType {
+    text-align:left;
+    padding-left: 100px;
+    padding-bottom: 10px;                
+}
+/*#contact {
+    background-color: lemonchiffon;
+    margin:auto;
+    height: 600px;
+    width: 600px; 
+} */
+#alignR {
+    text-align: right;
+}
+#alignL {
+    text-align: left;
+    width:198px;
+}
+#AdditionalInformation {
+    width:172px;
+    height:50px;
+}
+#InquiryReason {
+    width:173px;
+}
+#submit{
+    text-align:center;
+}
+#FullName, #EmailAddress, #BestDays {
+    color: red;
+}
+.commonBackground {
+    background-color:#B8DDDB;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+  border: none;
+}
+/*#restaurant #restaurantDesc{
+    width: 400px; height: 150px;
+} */
