@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find Max Number from a list</title>
+    </head>
+    <body>
+    <p>Finding the largest number.</p>
+    <p id="findMaxNumber"></p>
+
+    <script>
+        function findMax() {
+            var max = -Infinity;
+            for(i=0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+    document.getElementById("findMaxNumber").innerHTML = findMax(10, 100, 45);
+    </script>
+    </body>
+</html>

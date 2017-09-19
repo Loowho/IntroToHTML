@@ -1,0 +1,15 @@
+form {
+    width: 250px;
+    text-align: center;
+}
+label {
+    text-align: right;
+}
+#inputField {
+
+    margin-bottom: 1px;
+}
+#resultDiv {
+    text-align: left;
+    width: 500px;
+}
