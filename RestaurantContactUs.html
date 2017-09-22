@@ -15,7 +15,7 @@
         src="./js/bootstrap.min.js">
     </script>
     <body id="contact" class=commonBackground>
-        <div class="container-fluid">
+        <div class="container">
             <div>
             <header>
                 Weekend Cafe<hr/>
@@ -37,83 +37,56 @@
                 </ul>
             </div>
             <div><hr/>
-                <form action="#" method="POST">
-                    <table class="table">
-                        <tr class="no-border">                   
-                                <td class="col-sm-4 col-sm-offset-4" id="alignR"><label id="FullName" for="FullName">Name: </label></td>
-                                <td class="col-sm-4 col-sm-offset-4" id="alignL"><input id="FullName" name="FullName" type="text" /></td>
-                        </tr>
-                        <tr class="no-border">
-                            <div>
-                                <p>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignR"><label id="EmailAddress" for="EmailAddress">Email: </label></td>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignL"><input id="EmailAddress" name="EmailAddress" type="text" /></td>
-                                </p>
-                            </div>
-                        </tr>
-                        <tr class="no-border">
-                            <div>
-                                <p>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignR"><label id="PhoneNumber" for="PhoneNumber">Phone: </label></td>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignL"><input id="PhoneNumber" name="PhoneNumber" type="text" /></td>
-                                </p>
-                            </div>
-                        </tr>
-                        <tr class="no-border">
-                            <div>
-                                <td class="col-sm-4 col-sm-offset-4" id="alignR"><label id="InquiryReason">Reason For Inquiry: </label></td>
-                                <td class="col-sm-4 col-sm-offset-4" id="alignL"><select id="InquiryReason" name="InquiryReason" >
-                                    <option selected value="Catering">Catering</option>
-                                    <option value="Private Party">Private Party</option>
-                                    <option value="Feedback">Feedback</option>
-                                    <option value="Other">Other</option>
-                                </select></td>
-                            </div>
-                        </tr>
-                        <tr class="no-border">
-                            <div>
-                                <p>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignR"><label id="AdditionalInformation">Additional Information: </label></td>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignL"><textarea id = "AdditionalInformation" name="AdditionalInformation" ></textarea></td>
-                                </p>
-                            </div>
-                        </tr>
-                        <tr class="no-border">
-                            <div>
-                                <p>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignR"><label id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label></td>
-                                    <td class="col-sm-4 col-sm-offset-4" id="alignL"><input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
-                                    <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes</td>
-                                </p>
-                            </div>
-                        </tr>
-                        <tr class="no-border">
-                            <div>
-                                <p>
-                                    <td  class="col-sm-4 col-sm-offset-4" id="alignR"><label id="BestDays" for="BestDays">Best days to contact you: </label></td>
-                                    <td  class="col-md-4 col-sm-offset-4" id="alignL"><input type="checkbox" name="BestDays" value="BestDays"/>M
-                                    <input type="checkbox" name="BestDays" value="BestDays"/>T
-                                    <input type="checkbox" name="BestDays" value="BestDays"/>W
-                                    <input type="checkbox" name="BestDays" value="BestDays"/>Th
-                                    <input type="checkbox" name="BestDays" value="BestDays"/>F </td>                              
-                                </p>
-                            </div>
-                        </tr>
-                    </table>
-                    <div>
-                        <p id="submit">
-                            <input type="submit" value="Send Request" /></td>
-                        </p>
+                <form action="#" method="POST" class="form-horizontal">
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="FullNameLabel" for="FullName">Name: </label>
+                        <input class="col-sm-4 col-offset-4" class="form-control" id="FullName" name="FullName" type="text">
+                    </div></br>
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="EmailAddressLabel" for="EmailAddress">Email: </label>
+                        <input class="col-sm-4 col-offset-4" class="form-control" id="EmailAddress" name="EmailAddress" type="text">
+                    </div></br>
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="PhoneNumber" for="PhoneNumber">Phone: </label>
+                        <input class="col-sm-4 col-offset-4" class="form-control" id="PhoneNumber" name="PhoneNumber" type="text">
+                    </div></br>
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="InquiryReason">Reason For Inquiry: </label>
+                        <select class="col-sm-4 col-offset-4" class="form-control" id="InquiryReason" name="InquiryReason">
+                            <option selected value="Catering">Catering</option>
+                            <option value="Private Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div></br>
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="AdditionalInformation">Additional Information: </label>
+                        <textarea class="col-sm-4 col-offset-4" class="form-control" id = "AdditionalInformation" name="AdditionalInformation" >
+                        </textarea>
+                    </div></br>
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label>
+                        <input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
+                        <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes
                     </div>
-                </div>
-                <div class="alert">
+                    <div class="row">
+                        <label class="col-sm-4 col-offset-4" id="BestDaysLabel" for="BestDays">Best days to contact you: </label>
+                            <input type="checkbox" name="BestDays" value="BestDays"/>M
+                            <input type="checkbox" name="BestDays" value="BestDays"/>T
+                            <input type="checkbox" name="BestDays" value="BestDays"/>W
+                            <input type="checkbox" name="BestDays" value="BestDays"/>Th
+                            <input type="checkbox" name="BestDays" value="BestDays"/>F                            
+                    </div></br>
+                    <div id="submit">
+                            <input type="submit" value="Send Request" />
+                    </div><br/>
+                    <div class="alert">
                     <span class="closebtn" 
                         onclick="this.parentElement.style.display='none';">&times;</span>
                         Please note that our website is best viewed with JavaScript enabled.
                     </div>
-                <div>                        
-            </form><hr/>           
-        </div>
+                </form><hr/>           
+            </div>
         <div>
             <footer>
                 268 Summer St, MeadowBrook, ME, 03890<br/>

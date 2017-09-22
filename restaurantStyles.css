@@ -64,24 +64,10 @@ a:active {
     padding-left: 100px;
     padding-bottom: 10px;                
 }
-#alignR {
-    text-align: right;
-}
-#alignL {
-    text-align: left;
-    width:198px;
-}
-#AdditionalInformation {
-    width:172px;
-    height:50px;
-}
-#InquiryReason {
-    width:173px;
-}
 #submit{
     text-align:center;
 }
-#FullName, #EmailAddress, #BestDays {
+#FullNameLabel, #EmailAddressLabel, #BestDaysLabel {
     color: red;
 }
 .commonBackground {
@@ -94,4 +80,19 @@ a:active {
 .removeBorder{ border:none }
 .table>tbody+tbody {
     border-top: 0px solid white;
+}
+#carouselImg{
+    width: 350px;
+    height: 350px;
+    margin:auto;
+}
+h4 {
+    font-size:10pt;
+}
+#carouselHeader {
+    color: yellow;
+    font-size: 16pt;
+}
+label {
+    text-align: right;
 }
