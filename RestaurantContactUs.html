@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Weekend Cafe Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <link href="./css/bootstrap.min.css"
         rel="stylesheet"/> 
@@ -15,78 +16,79 @@
         src="./js/bootstrap.min.js">
     </script>
     <body id="contact" class=commonBackground>
-        <div class="container">
-            <div>
+        <div>
             <header>
                 Weekend Cafe<hr/>
             </header>
-            </div>
-            <div>
-                <ul id=navigation class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="RestaurantHome.html">
+        </div>
+        <div>
+            <ul id=navigation class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="RestaurantHome.html">
                         <span class="glyphicon glyphicon-home"></span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nave-link active" href="RestaurantMenu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="RestaurantContactUs.html"> Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div><hr/>
-                <form action="#" method="POST" class="form-horizontal">
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="FullNameLabel" for="FullName">Name: </label>
-                        <input class="col-sm-4 col-offset-4" class="form-control" id="FullName" name="FullName" type="text">
-                    </div></br>
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="EmailAddressLabel" for="EmailAddress">Email: </label>
-                        <input class="col-sm-4 col-offset-4" class="form-control" id="EmailAddress" name="EmailAddress" type="text">
-                    </div></br>
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="PhoneNumber" for="PhoneNumber">Phone: </label>
-                        <input class="col-sm-4 col-offset-4" class="form-control" id="PhoneNumber" name="PhoneNumber" type="text">
-                    </div></br>
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="InquiryReason">Reason For Inquiry: </label>
-                        <select class="col-sm-4 col-offset-4" class="form-control" id="InquiryReason" name="InquiryReason">
-                            <option selected value="Catering">Catering</option>
-                            <option value="Private Party">Private Party</option>
-                            <option value="Feedback">Feedback</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div></br>
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="AdditionalInformation">Additional Information: </label>
-                        <textarea class="col-sm-4 col-offset-4" class="form-control" id = "AdditionalInformation" name="AdditionalInformation" >
-                        </textarea>
-                    </div></br>
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label>
-                        <input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
-                        <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes
-                    </div>
-                    <div class="row">
-                        <label class="col-sm-4 col-offset-4" id="BestDaysLabel" for="BestDays">Best days to contact you: </label>
-                            <input type="checkbox" name="BestDays" value="BestDays"/>M
-                            <input type="checkbox" name="BestDays" value="BestDays"/>T
-                            <input type="checkbox" name="BestDays" value="BestDays"/>W
-                            <input type="checkbox" name="BestDays" value="BestDays"/>Th
-                            <input type="checkbox" name="BestDays" value="BestDays"/>F                            
-                    </div></br>
-                    <div id="submit">
-                            <input type="submit" value="Send Request" />
-                    </div><br/>
-                    <div class="alert">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nave-link active" href="RestaurantMenu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="RestaurantContactUs.html"> Contact Us</a>
+                </li>
+            </ul>
+        </div><hr/>
+        <form action="#" method="POST">
+            <div class="container">                        
+                <div class="row">
+                    <label class="col-sm-3 col-offset-3" id="FullNameLabel" for="FullName">Name: </label>
+                    <input class="col-sm-3 col-offset-3" class="form-control" id="FullName" name="FullName" type="text">
+                </div></br>
+                <div class="row">
+                    <label class="col-sm-3 col-offset-3" id="EmailAddressLabel" for="EmailAddress">Email: </label>
+                    <input class="col-sm-3 col-offset-3" class="form-control" id="EmailAddress" name="EmailAddress" type="text">
+                </div></br>
+                <div class="row">
+                    <label class="col-sm-3 col-offset-3" id="PhoneNumber" for="PhoneNumber">Phone: </label>
+                    <input class="col-sm-3 col-offset-3" class="form-control" id="PhoneNumber" name="PhoneNumber" type="text">
+                 </div></br>
+                <div class="row">
+                    <label class="col-sm-3 col-offset-3" id="InquiryReason">Reason For Inquiry: </label>
+                    <select class="col-sm-3 col-offset-3" class="form-control" id="InquiryReason" name="InquiryReason">
+                        <option selected value="Catering">Catering</option>
+                        <option value="Private Party">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div></br>
+                <div class="row">
+                    <label class="col-sm-3 col-offset-3" id="AdditionalInformation">Additional Information: </label>
+                    <textarea class="col-sm-3 col-offset-3" class="form-control" id = "AdditionalInformation" name="AdditionalInformation" >
+                    </textarea>
+                </div></br>
+                <div class="row">
+                    <label class="col-sm-3" id="VisitedBefore" for="VistedBefore">Have you been to the restaurant? </label>
+                    <input id="VisitedBefore" type="radio" name="visited" value="No" checked/>No
+                    <input id="VisitedBefore" type="radio" name="visited" value="Yes" />Yes
+                    <div class="col-sm-9"> </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-3" id="BestDaysLabel" for="BestDays">Best days to contact you: </label>
+                        <input type="checkbox" name="BestDays" value="BestDays"/>M
+                        <input type="checkbox" name="BestDays" value="BestDays"/>T
+                        <input type="checkbox" name="BestDays" value="BestDays"/>W
+                        <input type="checkbox" name="BestDays" value="BestDays"/>Th
+                        <input type="checkbox" name="BestDays" value="BestDays"/>F                            
+                    <div class="col-sm-9"> </div>
+                </div></br>
+                <div id="submit">
+                    <input type="submit" value="Send Request" />
+                </div><br/>
+                <div class="alert">
                     <span class="closebtn" 
                         onclick="this.parentElement.style.display='none';">&times;</span>
                         Please note that our website is best viewed with JavaScript enabled.
-                    </div>
-                </form><hr/>           
-            </div>
+                </div>
+            </div>          
+        </form><hr/> 
         <div>
             <footer>
                 268 Summer St, MeadowBrook, ME, 03890<br/>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Weekend Cafe Menu</title>
         <link href="./css/bootstrap.min.css"
             rel="stylesheet"/> 
         <link href="./restaurantStyles.css"
@@ -13,154 +12,128 @@
         <script
             src="./js/bootstrap.min.js">
         </script>
+        <title>Weekend Cafe Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body id="menu" class=commonBackground>
-        <div class="container-fluid">
-            <div>
-                <header>
-                    Weekend Cafe<hr/>
-                </header>
-            </div>
-            <div>
-                <ul id=navigation class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="RestaurantHome.html">
-                        <span class="glyphicon glyphicon-home"></span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nave-link active" href="RestaurantMenu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="RestaurantContactUs.html"> Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div><hr/>
-                <div  class="table-responsive">
-                    <table id=menutTable class="table" class="removeBorder">
-                        <tr id=menuHeader class="no-border">
-                            <th class="column-label col-sm-4">Burger and Fries</th>
-                            <th class="column-label col-sm-4">Hot Dog and Chips</th>
-                            <th class="column-label col-sm-4">Italian Sausage and Peppers</th>
-                        </tr>
-                        <tbody>
-                            <tr id=menuBody class="no-border">
-                                <td class="col-md-4" class="no-border">
-                                    An American Classic!<br/>
-                                    Your choice - with or without cheese<br/>
-                                    Pickle, onion, tomato, and lettuce<br/>
-                                    Served with our famous thick cut<br/>
-                                    french fries<br/>
-                                    <br/>
-                                    $7.95
-                                </td>
-                                <td class="col-md-4">
-                                    A Summer Classic!<br/>
-                                    Your choice - white or wheat bun<br/>
-                                    Relish, mustard, and ketchup<br/>
-                                    Served with our house-made chips<br/>
-                                    <br/>
-                                    $7.95
-                                </td>
-                                <td class="col-md-4">
-                                    An All-Time Favorite!!<br/>
-                                    Your choice - mild or spicy<br/>
-                                    Cole Slaw<br/>
-                                    Served with garlic mashers<br/>
-                                    <br/>
-                                    $10.95
-                                </td>
-                            </tr>
-                        </tbody>
-                       <tr id=menuHeader>
-                            <th class="column-label col-sm-4">Tenderloin Sandwich and Chips</th>
-                            <th class="column-label col-sm-4">House Salad</th>
-                            <th class="column-label col-sm-4">Brisket Sandwich and Fries</th>
-                        </tr>
-                        <tbody>
-                            <tr id=menuBody class="no-border">
-                                <td class="col-md-4">
-                                    Really Hits the Spot!<br/>
-                                    Plain or Sesame Seed Bun<br/>
-                                    Pickle, onion, tomato, and lettuce<br/>
-                                    Served with our house-made chips<br/>
-                                    <br/>
-                                    $8.95
-                                </td>
-                                <td class="col-md-4">
-                                    On the lighter side<br/>
-                                    Your choice - with or without cheese<br/>
-                                    Iceburg lettuce, tomatoes, peppers<br/>
-                                    Served with a dinner roll<br/>
-                                    <br/>
-                                    $6.95
-                                </td>
-                                <td class="col-md-4">
-                                    A Taste of Texas!<br/>
-                                    Smoked Brisket on thick-cut Texas<br/>
-                                    Toast<br/>
-                                    Served with our famous thick-cut<br/>
-                                    french fries<br/>
-                                    <br/>
-                                    $7.95
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tr id=menuHeader>
-                            <th class="column-label col-sm-4">Beverages</th>
-                            <th class="column-label col-sm-4"> </th>
-                            <th class="column-label col-sm-4"> </th>
-                        </tr>
-                        <tbody>
-                            <tr id=menuBody class="no-border">
-                                <td class="col-md-4">
-                                    Root Beer
-                                </td>
-                                <td id=beveragePrice class="col-md-4">
-                                    $3.00
-                                </td>
-                                <td class="col-md-4">
-                                    
-                                </td>
-                            </tr>
-                            <tr id=menuBody class="no-border">
-                                <td class="col-md-4">
-                                    Bottled Water
-                                </td>
-                                <td id=beveragePrice class="col-md-4">
-                                    $1.25
-                                </td>
-                                <td class="col-md-4">
-                                    
-                                </td>
-                            </tr>
-                            <tr id=menuBody class="no-border">
-                                <td class="col-md-4">
-                                    Lemonade
-                                </td>
-                                <td id=beveragePrice class="col-md-4">
-                                    $1.00
-                                </td>
-                                <td class="col-md-4">
-                                    
-                                </td>
-                            </tr>
-                            <tr id=menuBody class="no-border">
-                                <td class="col-md-4">
-                                    Iced Tea
-                                </td>
-                                <td id=beveragePrice class="col-md-4">
-                                    $1.25
-                                </td>
-                                <td class="col-md-4">
-                                    
-                                </td>
-                            </tr>
-                        </tdody>
-                    </table><hr/>
+<body class=commonBackground>
+    <div>
+        <header>
+            Weekend Cafe<hr/>
+        </header>
+        <div>
+            <ul id=navigation class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="RestaurantHome.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nave-link active" href="RestaurantMenu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="RestaurantContactUs.html"> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Burger and Fries</h3>
+                    <p>
+                        An American Classic!</br>
+                        Your choice - with or without cheese</br>
+                        Pickle, onion, tomato, and lettuce</br>
+                        Served with our famous thick cut french fries<br/>
+                        <br/>
+                        $7.95
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Hot Dog and Chips</h3>
+                    <p>
+                        A Summer Classic!</br>
+                        Your choice - white or wheat bun</br>
+                        Relish, mustard, and ketchup</br>
+                        Served with our house-made chips<br/>
+                        <br/>
+                        $7.95
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Italian Sausage and Peppers</h3>
+                    <p>
+                        An All-Time Favorite!!</br>
+                        Your choice - mild or spicy</br>
+                        Cole Slaw</br>
+                        Served with garlic mashers<br/>
+                        <br/>
+                        $10.95       
+                    </p>                   
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Tenderloin Sandwich and Chips</h3>
+                    <p>
+                        Really Hits the Spot!<br/>
+                        Plain or Sesame Seed Bun<br/>
+                        Pickle, onion, tomato, and lettuce<br/>
+                        Served with our house-made chips<br/>
+                        <br/>
+                        $8.95
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>House Salad</h3>
+                    <p>
+                        On the lighter side<br/>
+                        Your choice - with or without cheese<br/>
+                        Iceburg lettuce, tomatoes, peppers<br/>
+                        Served with a dinner roll<br/>
+                        <br/>
+                        $6.95        
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Brisket Sandwich and Fries</h3>
+                    <p>
+                        A Taste of Texas!<br/>
+                        Smoked Brisket on thick-cut Texas<br/>
+                        Toast<br/>
+                        Served with our famous thick-cut<br/>
+                        french fries<br/>
+                        <br/>
+                        $7.95        
+                    </p>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-sm-4">
+                    <h3>Beverages</h3></div>
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">Root Beer</div>
+                <div id=beveragePrice class="col-xs-4">$3.00</div>
+                <div class="col-sm-4"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">Bottled Water</div>
+                <div id=beveragePrice class="col-sm-4">$1.25</div>
+                <div class="col-sm-4"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">Lemonade</div>
+                <div id=beveragePrice class="col-sm-4">$1.00</div>
+                <div class="col-sm-4"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">Iced Tea</div>
+                <div id=beveragePrice class="col-sm-4">$1.25</div>
+                <div class="col-sm-4"> </div>
+            </div>
+        </div>
             <div class="alert">
                 <span class="closebtn" 
                     onclick="this.parentElement.style.display='none';">&times;</span>
